@@ -6,9 +6,9 @@ This is a simple example for running a docker container with php and nginx.
 
 ## Get it up and running
 
-- [Install docker on your machine.](install-docker)
+- [Install docker on your machine.][install-docker]
 
-- [Install docker-compose on your machine.](install-docker-compose)
+- [Install docker-compose on your machine.][install-docker-compose]
 
 - Clone this repository.
 
@@ -62,7 +62,6 @@ php_1  | [19-May-2017 21:44:03] NOTICE: ready to handle connections
 ```
 
 - Visit `localhost:8080` in your browser.
-
 
 ## License
 
