@@ -31,34 +31,35 @@ $ docker-compose up
 - You should see an output like this.
 
 ``` bash
-$ docker-compose up --build
+$docker-compose up --build
 Building php
 Step 1/4 : FROM php:7.1-fpm-alpine
  ---> 8a87fcbea0c9
 Step 2/4 : COPY ./conf/php-fpm.conf /etc/php/7.1/fpm/pool.d/www.conf
  ---> Using cache
  ---> 3b0231129196
-Step 3/4 : COPY ./src/ /code
- ---> Using cache
- ---> 25dedd6a97c0
+Step 3/4 : COPY . /code
+ ---> 4e862a5bae65
+Removing intermediate container eb4c8aa38fd6
 Step 4/4 : VOLUME /code
- ---> Using cache
- ---> 55ce4a7c4581
-Successfully built 55ce4a7c4581
+ ---> Running in 965b923d1612
+ ---> a48844bbb0f9
+Removing intermediate container 965b923d1612
+Successfully built a48844bbb0f9
 Successfully tagged dockernginxphpexample_php:latest
 Building web
 Step 1/2 : FROM nginx:1.11-alpine
  ---> f35b49deb234
 Step 2/2 : COPY ./conf/nginx.conf /etc/nginx/conf.d/default.conf
- ---> Using cache
- ---> fc1acee77b45
-Successfully built fc1acee77b45
+ ---> 906659bc675e
+Removing intermediate container d024ec3e3a48
+Successfully built 906659bc675e
 Successfully tagged dockernginxphpexample_web:latest
-Starting dockernginxphpexample_php_1
-Starting dockernginxphpexample_web_1
+Recreating dockernginxphpexample_php_1
+Recreating dockernginxphpexample_web_1
 Attaching to dockernginxphpexample_php_1, dockernginxphpexample_web_1
-php_1  | [19-May-2017 21:44:03] NOTICE: fpm is running, pid 1
-php_1  | [19-May-2017 21:44:03] NOTICE: ready to handle connections
+php_1  | [20-May-2017 19:27:58] NOTICE: fpm is running, pid 1
+php_1  | [20-May-2017 19:27:58] NOTICE: ready to handle connections
 ```
 
 - Visit `localhost:8080` in your browser.

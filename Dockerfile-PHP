@@ -4,6 +4,6 @@ FROM php:7.1-fpm-alpine
 COPY ./conf/php-fpm.conf /etc/php/7.1/fpm/pool.d/www.conf
 
 # Copy the application code
-COPY ./src/ /code
+COPY . /code
 
 VOLUME ["/code"]

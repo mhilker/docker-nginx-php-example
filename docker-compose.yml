@@ -9,7 +9,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./src/:/code/
+      - .:/code/
     links:
       - php
 
@@ -18,4 +18,4 @@ services:
       context: .
       dockerfile: Dockerfile-PHP
     volumes:
-      - ./src/:/code/
+      - .:/code/
