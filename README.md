@@ -62,7 +62,9 @@ php_1  | [20-May-2017 19:27:58] NOTICE: fpm is running, pid 1
 php_1  | [20-May-2017 19:27:58] NOTICE: ready to handle connections
 ```
 
-- Visit `localhost:8080` in your browser.
+- Visit `localhost:8080` in your browser. You should see an output like this.
+
+![Hello World Output with Docker and PHP + Nginx](./resources/screenshot-01.png)
 
 ## License
 
