@@ -5,7 +5,7 @@ services:
   web:
     build:
       context: .
-      dockerfile: Dockerfile-Nginx
+      dockerfile: docker/nginx/Dockerfile
     ports:
       - "8080:80"
     volumes:
@@ -16,6 +16,6 @@ services:
   php:
     build:
       context: .
-      dockerfile: Dockerfile-PHP
+      dockerfile: docker/php/Dockerfile
     volumes:
       - .:/code/
