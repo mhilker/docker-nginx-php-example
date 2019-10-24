@@ -1,8 +1,10 @@
 # Docker Nginx PHP Example
 
 [![Software License][ico-license]](LICENSE.md)
+[![PHP Version][ico-php-version]](https://hub.docker.com/_/php)
+[![NGINX Version][ico-nginx-version]](https://hub.docker.com/_/nginx)
 
-This is a simple example for running a docker container with php and nginx.
+This is a simple example for running a docker container with PHP-FPM and NGINX.
 
 ## Get it up and running
 
@@ -70,5 +72,7 @@ Visit `localhost:8080` in your browser. You should see an output like this.
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-php-version]: https://img.shields.io/badge/PHP-7.3--fpm-blue?style=flat-square
+[ico-nginx-version]: https://img.shields.io/badge/NGINX-1.17-green?style=flat-square
 [install-docker]: https://docs.docker.com/engine/installation
 [install-docker-compose]: https://docs.docker.com/compose/install
