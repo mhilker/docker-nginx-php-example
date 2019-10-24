@@ -4,6 +4,6 @@ FROM php:7.3-fpm-alpine3.10
 COPY ./docker/php/php-fpm.conf /etc/php/7.1/fpm/pool.d/www.conf
 
 # Copy the application code
-COPY . /code
+COPY . /app
 
-VOLUME ["/code"]
+VOLUME ["/app"]
